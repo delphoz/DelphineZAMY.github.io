@@ -1,0 +1,39 @@
+
+body {
+  margin: 0;
+}
+
+
+main { 
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  font-family: 'IM Fell French Canon Pro';
+  font-size: 1.4rem;
+  padding: 1rem 20%;
+  line-height: 1.6;
+}
+
+.titre-article{
+  font-family: 'Lora',serif;
+}
+
+.sous-titre-art{
+  font-family: 'Roboto', serif;
+  font-size: 15px;
+  font-style: italic;
+  padding-top: -100px;
+}
+
+.colle{
+  line-height: 0.6;
+}
+.colle2{
+  line-height: 1.0;
+}
+
+.enligne{
+  text-align: center;
+  display: inline;
+}
+.contacts

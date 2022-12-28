@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=PT+Serif&family=Roboto&display=swap');
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800;);
+.anim {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 1px;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.anim * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.anim img {
+  vertical-align: top;
+  backface-visibility: hidden;
+}
+
+.anim figcaption {
+  position: absolute;
+  background-color: #fff;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  padding: 5px 20px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  line-height: 1.1em;
+  overflow: hidden;
+  height: 44px;
+}
+
+.anim h3 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.anim h3.hover {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.anim a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.anim:hover > img,
+.anim.hover > img {
+  opacity: 0;
+}
+
+.anim:hover figcaption,
+.anim.hover figcaption {
+  background-color: #000000;
+}
+
+.anim:hover .titre-oeuvres,
+.anim.hover .titre-oeuvres {
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+
+.anim:hover .hover,
+.anim.hover .hover {
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
+}
+
+/* root styling*/
+
+:root{
+	--light:#f8f9fa;
+	--secondary:#adb5bd;
+	--dark:#343a40;
+	--primary-color:#000000;
+	--secondary-color:#2ec4b6;
+	--border:#e9ecef;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+	a{
+		text-decoration: none;
+	}
+
+	*>*{
+		box-sizing: border-box;
+	}
+
+.text-light{
+	color: var(--light);
+}
+
+.text-secondary{
+	color:var(--secondary);
+}
+
+.text-dark{
+	color: var(--dark);
+}
+.text-primary{
+	color: var(--primary-color);
+}
+
+.bg-light{
+	background-color: var(--light); 
+}
+
+
+.container{
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: auto;
+}
+
+.img-fluid{
+	width: 100%;
+
+}
+
+.text-title{
+	font-family: 'Lora', serif;
+	font-weight: bold;
+}
+
+.secondary-title{
+	font-family: 'Roboto', serif;
+}
+
+.display-1{
+	font-size: 21px;
+}
+.display-2{
+	font-size: 16px;
+}
+.display-3{
+	font-size: 14px;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
+/*navigation*/
+
+.navbar{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.nav-brand{
+	font-family: 'IM Fell French Canon Pro', sans-serif;
+	font-weight: bold;
+	align-self: center;	
+	font-size: 32px;
+}
+
+.collapse{
+	align-self: center;
+}
+
+.nav-link{
+	font-size: 18px;
+	margin: 12px;
+	color:var(--dark);
+	font-family: 'IM Fell French Canon Pro', serif;
+}
+
+.nav-link:hover{
+	color: var(--primary-color);
+}
+
+.search-box{
+	display: inline;
+	border-right: 1px solid var(--secondary);
+	padding-right:12px; 
+	margin-right:10px;
+}
+
+.toggle-button{
+	font-size: 21px;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	right:0;
+	margin: 8px 10px;
+	display:none;
+}
+
+.toggle-button:focus{
+	outline: none;
+}
+
+/*.navigation*/
+
+/*main section*/
+#site-main{
+	margin-top: 0em;
+}
+
+#posts{
+	margin-bottom:5em;
+	margin-left: 0em;
+
+
+}
+
+.grid{
+	margin: 0 auto;
+
+}
+
+.grid .grid-item{
+	width: calc(33.333% - 5px);
+	margin-bottom: 0em;
+	display: inline-block;
+
+}
+
+.displayed{
+	display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+/*main section*/
+
+/*media query*/
+
+@media (max-width: 992px){
+	.navbar{
+		flex-direction: column;
+	}
+}
+@media (max-width: 574px){
+	.toggle-button{
+		display: initial;
+	}
+
+.collapse{
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.8s cublc-bezler(0.51,-0.15,0,0.98)
+	}
+
+.collapse .nav-link{
+	display: block;
+	text-align: center;
+	}
+
+.search-box{
+	border-right: none;
+	}
+
+.collapse-toggle{
+	max-height:500px; 
+	}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: IM Fell French Canon Pro;
+  padding: 50px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 25px;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 3px;
+  text-align: center;
+  background: #ddd;
+  font-size: 10px;
+  margin-top: 10px;
+  margin-bottom: -100px;
+  line-height: 0.5;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Contacts */
+.contacts{
+
+	width: 500px;
+	background-color: #fff;
+	top: 65%;
+	left: 50%;
+	transform:translate(-50%, -50%) ;
+	position: absolute;
+}
+
+form{
+	margin: 35px;
+}
+.input-field{
+	width: 400px;
+	height: 40px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1 px solid #777;
+	border-radius: 10px;
+	outline: none;
+}
+
+.textarea-field{
+	height:100px ;
+	padding-top: 10px;
+}
+.btn{
+	border-radius: 20px;
+	color: #fff;
+	margin-top: 18px;
+	padding: 10px;
+	background-color: #5e5e5e;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+
+.text-art{
+	text-align: justify;
+}

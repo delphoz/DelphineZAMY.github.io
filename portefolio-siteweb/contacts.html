@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='fr'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  <title>contactez moi</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/article.css">
+  
+  </head>
+
+<body>
+
+   <header id="header" class="shadow bg-light">
+        <nav class="container navbar">
+          <a href="index.html" class="nav-brand text-dark">
+            DELPHINE ZAMY</a>
+
+          <button class="toggle-button">
+            <span><i class="fas fa-bars"></i></span>
+          
+          </button>
+
+
+
+          <!-- collaspse on toggle button click-->
+          <div class="collapse">
+            <ul class="navbar-nav">
+              <a href="propos.html" class="nav-link">A PROPOS</a>
+              <a href="projets.html" class="nav-link">MES PROJETS</a>
+              <a href="contacts.html" class="nav-link">CONTACTEZ MOI</a>
+            </ul>
+          </div>
+
+          <div class="collapse">
+            <ul class="navbar-nav">
+              
+            </ul>
+          </div>
+        </nav>
+        
+      </header>
+
+      <br>
+
+<article><div style="margin: 0;padding: 1.3rem;background-color:white;font-size: 20px;"><a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>    Retour à l'accueil</article></div>
+<br>
+<br>
+<div class="contacts">
+  <div class="text-center"><h2>ME CONTACTER</h2></div>
+<form action="https://api.web3forms.com/submit" method="POST"> 
+  <input type="hidden" name="access_key" value="2aa69f53-6f8f-4803-8b3a-71d58bc7fd84">
+
+  <input type="text" name="name"class="input-field" placeholder="Votre Nom" required>
+  <input type="email" name="email"class="input-field" placeholder="Votre Email"required>
+
+  <input type="text" name="sujet"class="input-field" placeholder="Sujet" required>
+  <textarea type="text" name="message"class="input-field textarea-field" placeholder="Votre Message" required></textarea>
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+<button type="submit" class="btn">Envoyer Message</button>
+</form></div>
+
+
+
+
+
+<script src="js/main.js"></script>
+
+</body>
